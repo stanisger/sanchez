@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grupo Sanchez</title>
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,700" rel="stylesheet">
 
 </head>
 
@@ -18,7 +19,7 @@
     <div class="off-canvas position-left" id="menuMobile" data-off-canvas>
 
 
-        <ul class="vertical menu drilldown" data-drilldown>
+        <ul class="vertical menu ">
             <li><a href="#">Productos</a></li>
             <li>
             <a href="#">Two</a>
@@ -39,8 +40,27 @@
     <div class="off-canvas-content" data-off-canvas-content>
 
         <header class="header">
-           <a href="#" class="text-hide"><img src="assets/grupo-sanchez-logo.svg" alt="zurb logo">Grupo Sánchez</a>
-           <i class="material-icons hide-for-large float-right" data-toggle="menuMobile" >menu</i>
+           <a href="#" class="text-hide [ link-logotipo ] ">
+               <img class="[ item-logotipo ]"src="assets/img/grupo-sanchez-logotipo.svg" alt="Grupo Sánchez">Grupo Sánchez</a>
+               <i class="material-icons hide-for-large [ data-toggle-menu ]" data-toggle="menuMobile" >menu</i>
+
+               <nav>
+                   <ul class="menu [ -secondary ]">
+
+                    <li><small class="font-bold">IDIOMA</small></li>
+                    <li>
+                        <select>
+                            <option value="husker">ESP</option>
+                            <option value="starbuck">ENG</option>
+                        </select>
+                    </li>
+
+                    <li><a href="#"> <i class="material-icons">menu</i></a></li>
+                    <li><a href="#"> <i class="material-icons">menu</i></a></li>
+                    <li><a href="#"> <i class="material-icons">menu</i></a></li>
+                   </ul>
+               </nav>
+
         </header>
 
     </div>
