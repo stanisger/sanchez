@@ -26,6 +26,9 @@ small {
 .cm-tertiary-color {
   color: #e3108a;
 }
+.cm-link-color {
+  color: #e3108a;
+}
 .cm-grayLight-color {
   color: #efefee;
 }
@@ -53,10 +56,11 @@ small {
 .cm-grayDark-bg {
   background-color: #b2b2b2;
 }
-:root {
-  font-size: 16px;
+.header {
+  background: #2699fb;
+  height: 4rem;
+  width: 100%;
 }
-body {
-  font-family: 'Arial', sans-serif;
-  color: #2699fb;
+.header .material-icons {
+  margin: 1rem;
 }

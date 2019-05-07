@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,41 @@
     <title>Grupo Sanchez</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
 </head>
+
 <body>
 
     <!-- menu mobile -->
-    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-        here menu
+    <div class="off-canvas position-left" id="menuMobile" data-off-canvas>
+
+
+        <ul class="vertical menu drilldown" data-drilldown>
+            <li><a href="#">Productos</a></li>
+            <li>
+            <a href="#">Two</a>
+            <ul class="menu vertical nested">
+            <li><a href="#">Two A</a></li>
+            <li><a href="#">Two B</a></li>
+            <li><a href="#">Two C</a></li>
+            <li><a href="#">Two D</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+       
     </div>
 
     <!-- content site -->
     <div class="off-canvas-content" data-off-canvas-content>
-            <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
-            <header> w</header>
-            <main>
-                <section>
-        
-                </section>
-            </main>
+
+        <header class="header">
+           <a href="#" class="text-hide"><img src="assets/grupo-sanchez-logo.svg" alt="zurb logo">Grupo Sánchez</a>
+           <i class="material-icons hide-for-large float-right" data-toggle="menuMobile" >menu</i>
+        </header>
+
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
