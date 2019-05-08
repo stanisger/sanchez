@@ -1,6 +1,6 @@
 .header
 	background $cm-primary-color
-	height 4rem
+	height 5.7rem
 	width 100%
 	position relative
 	padding 1.3rem 0
@@ -37,6 +37,19 @@
 
 				li:nth-child(3) 
 					margin-left 1rem
+				
+				li:nth-child(2) 
+					position relative 
+		
+					&:after
+						content '\f10f'
+						color $cm-white-color
+						font-family Flaticon
+						font-size .5rem
+						position absolute
+						right 1.3rem
+						transform rotate(-90deg)
+						top .45rem
 
 				select 
 					background transparent
@@ -45,13 +58,15 @@
 					border-right 1px solid $cm-white-color 
 					color $cm-white-color
 					font-size .7rem
-					padding 0 1rem
 					height auto
+					padding 0 2rem 0 1rem
+					position relative
+
 				a 
 					padding 0
-					margin 0 .5rem 
+					margin .25rem .6rem 0
 				
-				.material-icons
+				[class^="flaticon-"] 
 					transition( color $cm-transition-middle ease)
 					color $cm-white-color
 
