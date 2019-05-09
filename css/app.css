@@ -310,11 +310,11 @@ small {
 }
 .container-text >.subtitle {
   font-family: $fony-body;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: lighter;
 }
 .container-text >.text-body {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 @font-face {
   font-family: "Flaticon";
