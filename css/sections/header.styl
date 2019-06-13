@@ -7,7 +7,7 @@
 	
    .data-toggle-menu 
 		transition( color $cm-transition-middle ease)
-		color $cm-link-color
+		color $cm-white-color
 		cursor pointer
 		margin 1rem
 		position absolute
@@ -25,12 +25,12 @@
 			width 9rem
 	nav
 		margin-top -.2rem
-		background $cm-grayMedium-color
+		background $cm-grayMedium-color 
 
 		.menu 
 			
 			&.-secondary
-				color $cm-white-color
+				color $cm-primary-color
 				margin auto
 				padding .1rem 0
 				width 15.5rem
@@ -43,7 +43,7 @@
 		
 					&:after
 						content '\f10f'
-						color $cm-white-color
+						color $cm-primary-color
 						font-family Flaticon
 						font-size .5rem
 						position absolute
@@ -55,8 +55,8 @@
 					background transparent
 					border 0
 					border-radius 0
-					border-right 1px solid $cm-white-color 
-					color $cm-white-color
+					border-right 1px solid $cm-primary-color 
+					color $cm-primary-color
 					font-size .7rem
 					height auto
 					padding 0 2rem 0 1rem
@@ -68,7 +68,7 @@
 				
 				[class^="flaticon-"] 
 					transition( color $cm-transition-middle ease)
-					color $cm-white-color
+					color $cm-primary-color
 
 					&:hover
 						color $cm-hover-color

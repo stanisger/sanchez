@@ -248,7 +248,7 @@
 }
 body {
   font-family: 'Arial', sans-serif;
-  color: #2699fb;
+  color: #011689;
 }
 h1,
 h2,
@@ -263,7 +263,7 @@ small {
   font-weight: regular;
 }
 .cm-primary-color {
-  color: #2699fb;
+  color: #011689;
 }
 .cm-secondary-color {
   color: #fff300;
@@ -278,13 +278,13 @@ small {
   color: #efefee;
 }
 .cm-grayMedium-color {
-  color: #d8d8d8;
+  color: #f2f2f2;
 }
 .cm-grayDark-color {
   color: #b2b2b2;
 }
 .cm-primary-bg {
-  background-color: #2699fb;
+  background-color: #011689;
 }
 .cm-secondary-bg {
   background-color: #fff300;
@@ -296,25 +296,49 @@ small {
   background-color: #efefee;
 }
 .cm-grayMedium-bg {
-  background-color: #d8d8d8;
+  background-color: #f2f2f2;
 }
 .cm-grayDark-bg {
   background-color: #b2b2b2;
 }
+.p05TB {
+  padding: 0.25rem 0.5rem;
+}
+.p05B {
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+}
+.p05R {
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+}
+.p05L {
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
 .container-text {
   padding: 1rem;
 }
+.container-text.-color-white {
+  color: #fff;
+}
 .container-text >.title {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin: 0;
 }
 .container-text >.subtitle {
   font-family: $fony-body;
-  font-size: 0.9rem;
+  font-size: 1.1 xdrem;
   font-weight: lighter;
 }
 .container-text >.text-body {
   font-size: 0.8rem;
+}
+.button.-primary-color-outline {
+  background: transparent;
+  border: 0.05rem solid #011689;
+  color: #011689;
+}
+.button.-primary-color {
+  background-color: #011689;
+  color: #fff;
 }
 @font-face {
   font-family: "Flaticon";
@@ -391,7 +415,7 @@ small {
   content: "\f111";
 }
 .menu-mobile {
-  background: #2699fb;
+  background: #011689;
   padding-top: 4rem;
 }
 .menu-mobile .item-menu {
@@ -421,8 +445,8 @@ small {
   color: #800080;
 }
 .card-lg {
-  min-height: 24rem;
-  padding: 5rem 2rem 0;
+  min-height: 21rem;
+  padding: 5rem 1rem 0;
 }
 .card-lg.-slide {
   min-height: 30rem;
@@ -434,8 +458,12 @@ small {
 .card-sm .text-body {
   display: none;
 }
+.-bg-img {
+  background-size: cover;
+  background-position: center;
+}
 .header {
-  background: #2699fb;
+  background: #011689;
   height: 5.7rem;
   width: 100%;
   position: relative;
@@ -447,7 +475,7 @@ small {
   -ms-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
-  color: #e3108a;
+  color: #fff;
   cursor: pointer;
   margin: 1rem;
   position: absolute;
@@ -464,10 +492,10 @@ small {
 }
 nav {
   margin-top: -0.2rem;
-  background: #d8d8d8;
+  background: #f2f2f2;
 }
 nav .menu.-secondary {
-  color: #fff;
+  color: #011689;
   margin: auto;
   padding: 0.1rem 0;
   width: 15.5rem;
@@ -480,7 +508,7 @@ nav .menu.-secondary li:nth-child(2) {
 }
 nav .menu.-secondary li:nth-child(2):after {
   content: '\f10f';
-  color: #fff;
+  color: #011689;
   font-family: Flaticon;
   font-size: 0.5rem;
   position: absolute;
@@ -501,8 +529,8 @@ nav .menu.-secondary select {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  border-right: 1px solid #fff;
-  color: #fff;
+  border-right: 1px solid #011689;
+  color: #011689;
   font-size: 0.7rem;
   height: auto;
   padding: 0 2rem 0 1rem;
@@ -518,7 +546,7 @@ nav .menu.-secondary [class^="flaticon-"] {
   -ms-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
-  color: #fff;
+  color: #011689;
 }
 nav .menu.-secondary [class^="flaticon-"]:hover {
   color: #800080;
