@@ -1,17 +1,29 @@
-.container-text
+.container-text 
     padding 1rem
     
-    &.-color-white
+    &.-color-white 
         color: $cm-white-color
 
     >.title
-        font-size 1.7rem
-        margin 0
+        font-size 1.3rem
+        margin 0 
     
-    >.subtitle
-        font-family $fony-body
-        font-size 1.1 xdrem
-        font-weight lighter
+    >.subtitle 
+        font-family $cm-font-body 
+        font-size 1rem
+        font-weight lighter 
 
     >.text-body 
         font-size .8rem
+        line-height 1.1rem 
+
+    @media (min-width 992px) 
+        >.title
+            font-size 2rem
+
+        >.subtitle 
+            font-size 1.3rem
+
+        >.text-body 
+            margin-bottom 2rem
+            font-size .92rem 

@@ -262,6 +262,9 @@ span,
 small {
   font-weight: regular;
 }
+.grid-container {
+  max-width: 74rem;
+}
 .cm-primary-color {
   color: #011689;
 }
@@ -320,16 +323,37 @@ small {
   color: #fff;
 }
 .container-text >.title {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 .container-text >.subtitle {
-  font-family: $fony-body;
-  font-size: 1.1 xdrem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
   font-weight: lighter;
 }
 .container-text >.text-body {
   font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+@media (min-width: 992px) {
+  .container-text >.title {
+    font-size: 2rem;
+  }
+  .container-text >.subtitle {
+    font-size: 1.3rem;
+  }
+  .container-text >.text-body {
+    margin-bottom: 2rem;
+    font-size: 0.92rem;
+  }
+}
+.button {
+  opacity: 1;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  -ms-transition: opacity;
+  -o-transition: opacity;
+  transition: opacity;
 }
 .button.-primary-color-outline {
   background: transparent;
@@ -339,6 +363,9 @@ small {
 .button.-primary-color {
   background-color: #011689;
   color: #fff;
+}
+.button:hover {
+  opacity: 0.4;
 }
 @font-face {
   font-family: "Flaticon";
@@ -452,11 +479,16 @@ small {
   min-height: 30rem;
 }
 .card-sm {
-  min-height: 14rem;
+  min-height: 256px;
   padding: 2rem 0;
 }
 .card-sm .text-body {
   display: none;
+}
+@media (min-width: 640px) {
+  .card-sm .text-body {
+    display: block;
+  }
 }
 .-bg-img {
   background-size: cover;
@@ -466,7 +498,7 @@ small {
   background: #011689;
   height: 5.7rem;
   width: 100%;
-  position: relative;
+  position: fixed;
   padding: 1.3rem 0;
 }
 .data-toggle-menu {
@@ -550,4 +582,112 @@ nav .menu.-secondary [class^="flaticon-"] {
 }
 nav .menu.-secondary [class^="flaticon-"]:hover {
   color: #800080;
+}
+main {
+  padding-top: 6.75rem;
+}
+main .grid-x .cell:nth-child(1) {
+  padding: 0 0 0.5rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(1) {
+    padding: 0 0.5rem 0.5rem 0;
+  }
+}
+main .grid-x .cell:nth-child(2) {
+  padding: 0 0.25rem 0.25rem 0;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(2) {
+    padding: 0 0 0.5rem 0.5rem;
+  }
+}
+main .grid-x .cell:nth-child(3) {
+  padding: 0 0 0.25rem 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(3) {
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  main .grid-x .cell:nth-child(3) {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+main .grid-x .cell:nth-child(4) {
+  padding: 0.25rem 0.25rem 0.25rem 0;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(4) {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  main .grid-x .cell:nth-child(4) {
+    padding: 0.5rem;
+  }
+}
+main .grid-x .cell:nth-child(5) {
+  padding: 0.25rem 0 0.25rem 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(5) {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  main .grid-x .cell:nth-child(5) {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+}
+main .grid-x .cell:nth-child(6) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(6) {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+main .grid-x .cell:nth-child(7) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(7) {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+}
+main .grid-x .cell:nth-child(8) {
+  padding: 0.25rem 0.25rem 0.25rem 0;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(8) {
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  main .grid-x .cell:nth-child(8) {
+    padding: 0.5rem 0.5rem 1rem 0;
+  }
+}
+main .grid-x .cell:nth-child(9) {
+  padding: 0.25rem 0 0.25rem 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(9) {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  main .grid-x .cell:nth-child(9) {
+    padding: 0.5rem 0.5rem 1rem;
+  }
+}
+main .grid-x .cell:nth-child(10) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  main .grid-x .cell:nth-child(10) {
+    padding: 0.5rem 0 1rem 0.5rem;
+  }
 }

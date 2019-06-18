@@ -5,11 +5,16 @@
     &.-slide
         min-height 30rem
 .card-sm
-    min-height 14rem
+    min-height 256px
     padding 2rem 0
     
     .text-body 
         display none
+    
+    @media (min-width:640px) 
+
+        .text-body 
+            display block
 
 .-bg-img
 	background-size cover
