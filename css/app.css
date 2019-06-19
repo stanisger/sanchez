@@ -249,6 +249,10 @@
 body {
   font-family: 'Arial', sans-serif;
   color: #011689;
+  background: #fff;
+}
+.cell {
+  background: #fff !important;
 }
 h1,
 h2,
@@ -263,7 +267,7 @@ small {
   font-weight: regular;
 }
 .grid-container {
-  max-width: 74rem;
+  max-width: 82rem;
 }
 .cm-primary-color {
   color: #011689;
@@ -335,7 +339,8 @@ small {
   }
   .container-text >.text-body {
     margin-bottom: 2rem;
-    font-size: 0.92rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 }
 .button {
@@ -463,6 +468,7 @@ small {
   color: #800080;
 }
 .card-lg {
+  background: #fff;
   min-height: 21rem;
   padding: 5rem 1rem 0;
 }
@@ -470,6 +476,7 @@ small {
   min-height: 30rem;
 }
 .card-sm {
+  background: #fff;
   min-height: 256px;
   padding: 2rem 0;
 }
@@ -665,6 +672,9 @@ main .grid-x .cell:nth-child(1) {
 }
 main .grid-x .cell:nth-child(2) {
   padding: 0 0.25rem 0.25rem 0;
+}
+main .grid-x .cell:nth-child(2) .card-sm {
+  min-height: 21rem;
 }
 @media (min-width: 640px) {
   main .grid-x .cell:nth-child(2) {
