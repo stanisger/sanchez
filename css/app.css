@@ -304,17 +304,8 @@ small {
 .cm-grayDark-bg {
   background-color: #b2b2b2;
 }
-.p05TB {
-  padding: 0.25rem 0.5rem;
-}
-.p05B {
-  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
-}
-.p05R {
-  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
-}
-.p05L {
-  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+.p-relative {
+  position: relative;
 }
 .container-text {
   padding: 1rem;
@@ -501,6 +492,11 @@ small {
   position: fixed;
   padding: 1.3rem 0;
 }
+@media (min-width: 992px) {
+  .header {
+    height: 5rem;
+  }
+}
 .data-toggle-menu {
   -webkit-transition: color 0.4s ease;
   -moz-transition: color 0.4s ease;
@@ -522,15 +518,35 @@ small {
   margin: auto;
   width: 9rem;
 }
+@media (min-width: 992px) {
+  .link-logotipo .item-logotipo {
+    margin-right: auto;
+    margin-left: 0;
+    width: 13rem;
+  }
+}
 nav {
   margin-top: -0.2rem;
   background: #f2f2f2;
+}
+@media (min-width: 992px) {
+  nav {
+    background: #011689;
+    position: absolute;
+    right: 1rem;
+    top: -0.9rem;
+  }
 }
 nav .menu.-secondary {
   color: #011689;
   margin: auto;
   padding: 0.1rem 0;
   width: 15.5rem;
+}
+@media (min-width: 992px) {
+  nav .menu.-secondary {
+    color: #fff;
+  }
 }
 nav .menu.-secondary li:nth-child(3) {
   margin-left: 1rem;
@@ -568,6 +584,11 @@ nav .menu.-secondary select {
   padding: 0 2rem 0 1rem;
   position: relative;
 }
+@media (min-width: 992px) {
+  nav .menu.-secondary select {
+    color: #fff;
+  }
+}
 nav .menu.-secondary a {
   padding: 0;
   margin: 0.25rem 0.6rem 0;
@@ -580,11 +601,59 @@ nav .menu.-secondary [class^="flaticon-"] {
   transition: color 0.4s ease;
   color: #011689;
 }
+@media (min-width: 992px) {
+  nav .menu.-secondary [class^="flaticon-"] {
+    color: #fff;
+  }
+}
 nav .menu.-secondary [class^="flaticon-"]:hover {
   color: #800080;
 }
+.menu-primary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.menu-primary li a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.7rem 2rem !important;
+  text-transform: uppercase;
+}
+.menu-primary li a:hover,
+.menu-primary li a:focus,
+.menu-primary li a:active {
+  color: #fff !important;
+}
+@media (min-width: 992px) {
+  .menu-primary {
+    display: flex;
+  }
+}
+.is-dropdown-submenu {
+  border: 0;
+  padding: 1rem 0;
+}
+.is-dropdown-submenu li:hover {
+  background: #f2f2f2;
+}
+.is-dropdown-submenu li a {
+  color: #011689;
+}
+.is-dropdown-submenu li a:hover,
+.is-dropdown-submenu li a:focus,
+.is-dropdown-submenu li a:active {
+  color: #011689 !important;
+}
 main {
   padding-top: 6.75rem;
+}
+@media (min-width: 992px) {
+  main {
+    padding-top: 6rem;
+  }
 }
 main .grid-x .cell:nth-child(1) {
   padding: 0 0 0.5rem;
