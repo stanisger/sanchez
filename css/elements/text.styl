@@ -1,5 +1,6 @@
 .container-text 
-    padding 1rem
+    padding 1rem 2rem
+    position relative
     
     &.-color-white 
         color: $cm-white-color
@@ -7,6 +8,19 @@
     >.title
         font-size 1.3rem
         margin 0 
+        &:before
+            content ''
+            position absolute
+            height .3rem
+            width 4rem
+            background $cm-secondary-color
+            bottom -.5rem
+            left 0
+        &.-center
+            &:before
+                left 0
+                right 0
+                margin auto
     
     >.subtitle 
         font-family $cm-font-body 
@@ -19,12 +33,15 @@
 
     @media (min-width 992px) 
         >.title
-            font-size 2rem
+            font-size 2.1rem
+            position relative
+            margin-bottom 1rem
 
         >.subtitle 
             font-size 1.3rem
+            margin 0
 
         >.text-body 
             margin-bottom 2rem
-            font-size 1rem 
+            font-size .9rem 
             line-height 1.4rem

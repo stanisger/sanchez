@@ -1,9 +1,11 @@
-main    
-    padding-top: 6.75rem 
+.container-main    
+    padding-top: 6rem 
     
-    @media(min-width 992px)
-            padding-top: 6rem 
-    
+    @media(max-width 1024px)
+            padding-top: 4.75rem
+    .cell
+	    background $cm-white-color !important
+   
     .grid-x
         .cell:nth-child(1) 
             padding 0 0 .5rem
@@ -82,3 +84,16 @@ main
 
              @media (min-width 640px) 
                 padding: .5rem 0 1rem .5rem 
+
+.gradient-img
+    position absolute
+    top 0
+    right 0
+    height 100%    
+    width 100%
+    background -moz-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%)
+    background -webkit-gradient(left top, right top, color-stop(0%, rgba(2,5,26,0.67)), color-stop(100%, rgba(0,0,0,0)))
+    background -webkit-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%)
+    background -o-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%)
+    background -ms-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%)
+    background linear-gradient(to right, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%)

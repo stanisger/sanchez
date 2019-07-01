@@ -1,0 +1,47 @@
+.container-map-ubication
+    padding 4rem 0
+
+    .mex 
+        position relative
+        padding 5rem 0 0
+
+        .city-container:nth-child(4) 
+            top 10rem
+            right 38rem
+
+        .city-container:nth-child(5) 
+            top 15.2rem
+            left 41rem
+
+        .city-container:nth-child(6) 
+            top 20rem
+            left 35rem
+
+        .city-container
+            position absolute
+            font-size .8rem
+            cursor pointer
+            &:hover
+                a
+                    right -2rem
+            span 
+                vertical-align text-bottom 
+
+            a
+                height 1.2rem
+                width 1.2rem
+                border-radius 50%
+                background $cm-secondary-color
+                display inline-block
+                padding 0.05rem 0.3rem
+                position absolute
+                right -1.7rem
+                top 0
+                transition all .4s ease
+
+                .material-icons
+                    color $cm-white-color
+                    font-size 11px
+        svg 
+            display block
+            margin auto

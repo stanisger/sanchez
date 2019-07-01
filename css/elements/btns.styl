@@ -1,15 +1,41 @@
 .button 
+	font-family $cm-font-title 
+	font-weight bold
 	opacity 1
-	transition opacity .4s
 
 	&.-primary-color-outline 
 		background transparent
-		border .05rem solid $cm-primary-color
-		color $cm-primary-color
+		border .05rem solid $cm-secondary-color
+		color $cm-secondary-color
 		
 	&.-primary-color
-		background-color $cm-primary-color
+		background-color $cm-secondary-color
 		color $cm-white-color 
-	
-	&:hover 
-		opacity .4
+		transition all .4s ease	
+		&:hover 
+			background-color $cm-tertiary-color
+	&.-absolute
+		background-color rgba( 0, 0, 0, .3)
+		color $cm-white-color 
+		transition all .4s ease	
+		position absolute
+		border-radius 0
+		width 100%
+		text-align right 
+		padding .9rem 4rem .9rem 0
+		margin 0
+		bottom 0
+		right -1px
+		border 0
+		
+		.material-icons
+			position absolute
+			font-size 1rem !important
+			top .77rem
+			margin-left 1rem
+			color $cm-secondary-color
+			transition all .4s ease 
+		
+		&:hover 
+			.material-icons
+				margin-left 1.5rem

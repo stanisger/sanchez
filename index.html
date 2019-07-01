@@ -16,14 +16,14 @@
 <body>
 
     <!-- menu mobile -->
-    <div class="off-canvas position-right [ menu-mobile ]" id="menuMobile" data-off-canvas>
+    <div class="off-canvas position-left [ menu-mobile ]" id="menuMobile" data-off-canvas>
         <ul class="vertical menu ">
             <li class="[ item-menu ]"><a class="[ item-link ]" href="#">INICIO</a></li><li>
             <li class="[ item-menu -item-title ]">PRODUCTOS</li>
                 <ul class="menu vertical nested">
                     <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Serigráfia</a></li>
-                    <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Cold Set</a></li>
-                    <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Head Set</a></li>
+                    <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Coldset</a></li>
+                    <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Heatset</a></li>
                     <li class="[ item-menu ]"><a class="[ item-link ]" href="#">OH</a></li>
                     <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Varn</a></li>
                     <li class="[ item-menu ]"><a class="[ item-link ]" href="#">Tintas Líquidas Base Solvente</a></li>
@@ -45,166 +45,250 @@
 
         <header class="header">
          <div class="grid-container p-relative">
-           <a href="#" class="text-hide [ link-logotipo ] ">
-               <img class="[ item-logotipo ]"src="assets/img/grupo-sanchez-logotipo.svg" alt="Grupo Sánchez">Grupo Sánchez</a>
-               <i class="material-icons hide-for-large [ data-toggle-menu ]" data-toggle="menuMobile" >menu</i>
-
-               <nav>
-                   <ul class="menu [ -secondary ]">
-                    <li><small class="font-bold">IDIOMA</small></li>
-                    <li>
-                        <select>
+            <div class="grid-x">
+                <!-- grupo-sanchez-logotipo -->
+                 <div class="cell medium-12 large-3">
+                     <a href="#" class="text-hide [ link-logotipo ] ">
+                       <img class="[ item-logotipo ]"src="assets/img/grupo-sanchez-logotipo.svg" alt="Grupo Sánchez">Grupo Sánchez
+                    </a>
+                 </div>
+    
+                <i class="material-icons hide-for-large [ data-toggle-menu ]" data-toggle="menuMobile" >menu</i>
+                
+                <div class="language-select">
+                    <i class="material-icons">language</i>
+                    <select class="language-select-mobile">
                             <option value="husker">ESP</option>
                             <option value="starbuck">ENG</option>
-                        </select>
-                    </li>
-
-                    <li><a href="#"> <i class="flaticon-facebook-logo"></i></a></li>
-                    <li><a href="#"> <i class="flaticon-twitter-logo-silhouette"></i></a></li>
-                    <li><a href="#"> <i class="flaticon-instagram"></i></a></li>
-                   </ul>
-               </nav>
-
-               <ul class=" dropdown menu [ menu-primary ]"  data-dropdown-menu>
-                <li>
-                    <a href="#">Productos</a>
-                    <ul class="menu ">
-                        <li><a href="#">Serigrafía</a></li>
-                        <li><a href="#">Cold Set</a></li>
-                        <li><a href="#">Head Set</a></li>
-                        <li><a href="#">OH</a></li>
-                        <li><a href="#">Varn</a></li>
-                        <li><a href="#">Tintas Liquidas Base Sovente</a></li>
-                        <li><a href="#">Tintas Liquidas Base Agua</a></li>
-                        <li><a href="#">Banda Angosta</a></li>
-                        <li><a href="#">Recubrimientos</a></li>
-                        <li><a href="#">Equipo</a></li>
+                    </select>
+                </div>    
+                <!-- menu desktop -->
+                <div class="cell auto">
+                    <ul class=" dropdown menu [ menu-primary ]"  data-dropdown-menu>
+                        <li class="menu-item">
+                            <a href="#">Productos</a>
+                            <ul class="menu ">
+                                <li><a href="#">Serigrafía</a></li>
+                                <li><a href="#">Coldset</a></li>
+                                <li><a href="#">Heatset</a></li>
+                                <li><a href="#">OH</a></li>
+                                <li><a href="#">Varn</a></li>
+                                <li><a href="#">Tintas Liquidas Base Sovente</a></li>
+                                <li><a href="#">Tintas Liquidas Base Agua</a></li>
+                                <li><a href="#">Banda Angosta</a></li>
+                                <li><a href="#">Recubrimientos</a></li>
+                                <li><a href="#">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">ACERCA DE GS</a></li>
+                        <li class="menu-item"><a href="#">BOLSA DE TRABAJO</a></li>
+                        <li class="menu-item"><a href="#">UBICACIÓN</a></li>
+                        <li class="menu-item"><a href="#">CONTACTO</a></li>
+                        <li class="menu-item">
+                            <i class="material-icons">language</i>
+                            <select class="language-select-desktop">
+                                <option value="husker">ESP</option>
+                                <option value="starbuck">ENG</option>
+                            </select>
+                        </li>
                     </ul>
-                    </li>
-                    <li><a href="#">ACERCA DE GS</a></li>
-                    <li><a href="#">BOLSA DE TRABAJO</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
+                </div>
+            </div>
+
+
          </div>
         </header>
 
-        <main class="grid-container">
+        <main class="grid-container container-main">
             <div class="grid-x">
-
                 <div class="cell small-12 medium-6 large-8 ">
                     <div class="[ card-lg -bg-img  cm-grayLight-bg ]" data-interchange="[assets/img/serigrafia.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Serigrafía</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
-                            <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                            <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> cum explicabo quos libero nobis.</p>
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                            <i class="material-icons"> arrow_forward_ios</i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="cell small-6 small-6 large-4 [ cm-grayMedium-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/cold-set.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
-                            <h1 class="[ title ]">Cold Set</h1>
+                            <h1 class="[ title ]">Coldset</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-6 medium-12 large-4 [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/head-set.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
-                            <h1 class="[ title ]">Head Set</h1>
+                            <h1 class="[ title ]">Heatset</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                <div class="cell small-6 large-4 [ cm-grayMedium-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/quimicos.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Químicos</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-6 large-4  [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/mantilla.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Mantillas</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-12 medium-6 [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/flexo-base-agua.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Flexo Base Agua</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-12 medium-6 [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/flexo-base-solvente.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Flexo Base Solvente</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
                 <div class="cell small-6 medium-12 large-4 [ cm-grayMedium-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/recubrimiento.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Recubrimineto</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-6 large-4  [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/banda-angosta.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Banda Angosta</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
                             <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos..</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
+                           
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
                 <div class="cell small-12 medium-6 large-4 [ cm-grayLight-bg ]">
                     <div class="[ card-sm -bg-img ]" data-interchange="[assets/img/equipo.jpg, small]">
+                        <div class="gradient-img"></div>
                         <div class="[ container-text -color-white ]">
                             <h1 class="[ title ]">Equipo</h1>
                             <h3 class="[ subtitle ]">Impregna tus ideas de color</h3>
-                            <p class="[ text-body ]"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cum explicabo quos libero nobis.</p>
-                            <a class="[ button small -primary-color ]" href=""> SABER MÁS</a>
                         </div>
+                        <a class="[ button small -absolute ]" href=""> SABER MÁS
+                                <i class="material-icons"> arrow_forward_ios</i>
+                            </a>
                     </div>
                 </div>
 
+                
+                <div class="cell small-12" >
+                    <div class="container-map-ubication">
+                        <div class="[ container-text ] text-center">
+                            <h1 class="[ title -center ]">Sucursales y Distribuidores</h1>
+                        </div>
+                         <!-- Raphaël JS Mapa -->
+                        <div id="map" class="mex">
+                            <div class="city-container">
+                                <span> México</span>
+                                <a><i class="material-icons"> arrow_forward_ios</i></a>
+                            </div>
+                            <div class="city-container">
+                                    <span> Guatemala</span>
+                                    <a><i class="material-icons"> arrow_forward_ios</i></a>
+                            </div>
+                            <div class="city-container">
+                                    <span> El Salvador</span>
+                                    <a><i class="material-icons"> arrow_forward_ios</i></a>
+                            </div>
+                            <div class="city-container">
+                                    <span> Costa Rica</span>
+                                    <a><i class="material-icons"> arrow_forward_ios</i></a>
+                            </div>
+                            <div class="city-container">
+                                    <span>Colombia</span>
+                                    <a><i class="material-icons"> arrow_forward_ios</i></a>
+                            </div>
+
+
+                            <div id='paper'></div>
+                        </div>
+                    </div>
+            </div>
+                
             </div>
         </main>
 
+
     </div>
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/mexico-low.js"></script>
+    <script src="js/raphael-min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
