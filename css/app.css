@@ -264,7 +264,9 @@ small {
   font-weight: regular;
 }
 .grid-container {
-  max-width: 82rem;
+  max-width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 .js-off-canvas-overlay {
   background: rgba(254,254,254,0.5);
@@ -344,15 +346,16 @@ small {
 .container-text >.text-body {
   font-size: 0.8rem;
   line-height: 1.1rem;
+  display: none;
 }
 @media (min-width: 992px) {
   .container-text >.title {
-    font-size: 2.1rem;
+    font-size: 2.7rem;
     position: relative;
     margin-bottom: 1rem;
   }
   .container-text >.subtitle {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin: 0;
   }
   .container-text >.text-body {
@@ -766,7 +769,7 @@ nav .menu.-secondary a {
   padding: 0;
 }
 .container-main {
-  padding-top: 6rem;
+  padding-top: 5.5rem;
 }
 @media (max-width: 1024px) {
   .container-main {
@@ -781,18 +784,15 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(1) {
-    padding: 0 0.5rem 0.5rem 0;
+    padding: 0 0.25rem 0.25rem 0;
   }
 }
 .container-main .grid-x .cell:nth-child(2) {
   padding: 0 0.25rem 0.25rem 0;
 }
-.container-main .grid-x .cell:nth-child(2) .card-sm {
-  min-height: 21rem;
-}
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(2) {
-    padding: 0 0 0.5rem 0.5rem;
+    padding: 0 0 0.25rem 0.25rem;
   }
 }
 .container-main .grid-x .cell:nth-child(3) {
@@ -800,12 +800,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(3) {
-    padding: 0.5rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .container-main .grid-x .cell:nth-child(3) {
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.25rem 0.25rem 0.25rem 0;
   }
 }
 .container-main .grid-x .cell:nth-child(4) {
@@ -813,12 +808,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(4) {
-    padding: 0.5rem 0.5rem 0.5rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .container-main .grid-x .cell:nth-child(4) {
-    padding: 0.5rem;
+    padding: 0.25rem 0 0.25rem 0.25rem;
   }
 }
 .container-main .grid-x .cell:nth-child(5) {
@@ -826,12 +816,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(5) {
-    padding: 0.5rem 0 0.5rem 0.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .container-main .grid-x .cell:nth-child(5) {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.25rem 0.25rem 0.25rem 0;
   }
 }
 .container-main .grid-x .cell:nth-child(6) {
@@ -839,7 +824,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(6) {
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.25rem;
   }
 }
 .container-main .grid-x .cell:nth-child(7) {
@@ -847,7 +832,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(7) {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.25rem 0 0.25rem 0.25rem;
   }
 }
 .container-main .grid-x .cell:nth-child(8) {
@@ -855,12 +840,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(8) {
-    padding: 0.5rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .container-main .grid-x .cell:nth-child(8) {
-    padding: 0.5rem 0.5rem 1rem 0;
+    padding: 0.25rem 0.25rem 0.25rem 0;
   }
 }
 .container-main .grid-x .cell:nth-child(9) {
@@ -868,12 +848,7 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(9) {
-    padding: 0.5rem 0.5rem 0.5rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .container-main .grid-x .cell:nth-child(9) {
-    padding: 0.5rem 0.5rem 1rem;
+    padding: 0.25rem 0 0.25rem 0.25rem;
   }
 }
 .container-main .grid-x .cell:nth-child(10) {
@@ -881,7 +856,31 @@ nav .menu.-secondary a {
 }
 @media (min-width: 640px) {
   .container-main .grid-x .cell:nth-child(10) {
-    padding: 0.5rem 0 1rem 0.5rem;
+    padding: 0.25rem 0.25rem 0.25rem 0;
+  }
+}
+.container-main .grid-x .cell:nth-child(11) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  .container-main .grid-x .cell:nth-child(11) {
+    padding: 0.25rem 0 0.25rem 0.25rem;
+  }
+}
+.container-main .grid-x .cell:nth-child(12) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  .container-main .grid-x .cell:nth-child(12) {
+    padding: 0.25rem 0.25rem 0.25rem 0;
+  }
+}
+.container-main .grid-x .cell:nth-child(13) {
+  padding: 0.25rem 0 0.25rem;
+}
+@media (min-width: 640px) {
+  .container-main .grid-x .cell:nth-child(13) {
+    padding: 0.25rem 0 0.25rem 0.25rem;
   }
 }
 .gradient-img {
@@ -890,12 +889,12 @@ nav .menu.-secondary a {
   right: 0;
   height: 100%;
   width: 100%;
-  background: -moz-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,5,26,0.67)), color-stop(100%, rgba(0,0,0,0)));
-  background: -webkit-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%);
-  background: -o-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%);
-  background: -ms-linear-gradient(left, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%);
-  background: linear-gradient(to right, rgba(2,5,26,0.67) 0%, rgba(0,0,0,0) 100%);
+  background: -moz-linear-gradient(left, rgba(2,5,26,0.89) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,5,26,0.89)), color-stop(100%, rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(left, rgba(2,5,26,0.89) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(left, rgba(2,5,26,0.89) 0%, rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(left, rgba(2,5,26,0.89) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right, rgba(2,5,26,0.89) 0%, rgba(0,0,0,0) 100%);
 }
 .container-map-ubication {
   padding: 2rem 0;
