@@ -1,5 +1,5 @@
 window.onload = function() {
-var rsr = Raphael('map', '850', '537');
+var rsr = Raphael('map', '850', '460');
 
 var regions = [];
 
@@ -73,7 +73,7 @@ for (var i = 0; i < regions.length; i++) {
     //}
 
     regions[i].mouseover(function(e){
-		this.node.setAttribute('fill', '#005a98');
+		this.node.setAttribute('fill', '#D8D8D8');
 		this.node.style.cursor= 'col-resiz';
 		document.getElementById('title').innerHTML = this.data('title');
 		document.getElementById('region-name').innerHTML = this.data('region');
@@ -82,37 +82,45 @@ for (var i = 0; i < regions.length; i++) {
 	});
 
 	regions[i].mouseout(function(e){
-		this.node.setAttribute('fill', '#7FC4FD');
+		this.node.setAttribute('fill', '#D8D8D8');
 	});
 }
 
-// $('#r1').mouseover(function(e){
-// 	region1.node.setAttribute('fill', '#005a98');
-// });
-// $('#r1').mouseout(function(){
-// 	region1.node.setAttribute('fill', '#7FC4FD');
-// });
+$('#r1').mouseover(function(e){
+	region1.node.setAttribute('fill', '#005a98');
+});
+$('#r1').mouseout(function(){
+	region1.node.setAttribute('fill', '#7FC4FD');
+});
 
-// $('#r2').mouseover(function(e){
-// 	region2.node.setAttribute('fill', '#005a98');
-// });
-// $('#r2').mouseout(function(){
-// 	region2.node.setAttribute('fill', '#7FC4FD');
-// });
+$('#r2').mouseover(function(e){
+	region2.node.setAttribute('fill', '#005a98');
+});
+$('#r2').mouseout(function(){
+	region2.node.setAttribute('fill', '#7FC4FD');
+});
 
-// $('#r3').mouseover(function(e){
-// 	region3.node.setAttribute('fill', '#005a98');
-// });
-// $('#r3').mouseout(function(){
-// 	region3.node.setAttribute('fill', '#7FC4FD');
-// });
+$('#r3').mouseover(function(e){
+	region3.node.setAttribute('fill', '#005a98');
+});
+$('#r3').mouseout(function(){
+	region3.node.setAttribute('fill', '#7FC4FD');
+});
 
-// $('#r4').mouseover(function(e){
-// 	region4.node.setAttribute('fill', '#005a98');
-// });
-// $('#r4').mouseout(function(){
-// 	region4.node.setAttribute('fill', '#7FC4FD');
-// });
+$('#r4').mouseover(function(e){
+	region6.node.setAttribute('fill', '#005a98');
+});
+$('#r4').mouseout(function(){
+	region6.node.setAttribute('fill', '#7FC4FD');
+});
+
+
+$('#r5').mouseover(function(e){
+	region8.node.setAttribute('fill', '#005a98');
+});
+$('#r5').mouseout(function(){
+	region8.node.setAttribute('fill', '#7FC4FD');
+});
 
 };
 
