@@ -264,12 +264,30 @@ small {
   font-weight: regular;
 }
 .grid-container {
-  max-width: 100%;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
 .js-off-canvas-overlay {
   background: rgba(254,254,254,0.5);
+}
+.accordion-title::before {
+  position: absolute;
+  top: 50px;
+  right: 2rem;
+  margin-top: -0.5rem;
+  content: '+';
+  font-size: 1.8rem;
+  background: #6c2c91;
+  width: 2rem;
+  height: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  padding: 0.1rem 0.5rem;
+  color: #fff;
 }
 .cm-primary-color {
   color: #00539f;
@@ -320,6 +338,12 @@ small {
 .container-text.-color-white {
   color: #fff;
 }
+.container-text >.list-descript {
+  list-style: none;
+}
+.container-text >.list-descript li {
+  padding: 0.4rem 0;
+}
 .container-text >.title {
   font-size: 1.3rem;
   margin: 0;
@@ -333,20 +357,44 @@ small {
   bottom: -0.5rem;
   left: 0;
 }
+.container-text >.title.-banda-angosta:before {
+  background: #6c2c91;
+}
+.container-text >.title.-center {
+  text-align: center;
+}
 .container-text >.title.-center:before {
   left: 0;
   right: 0;
   margin: auto;
+}
+.container-text >.title.-eyecatcher {
+  font-size: 2.2rem;
+}
+.container-text >.title.-card-expand {
+  font-size: 1rem;
+}
+.container-text >.title.-card-expand:before {
+  display: none;
 }
 .container-text >.subtitle {
   font-family: 'Arial', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
 }
+.container-text >.subtitle.-eyecatcher {
+  font-size: 0.9rem;
+}
+.container-text >.subtitle.-center {
+  text-align: center;
+}
 .container-text >.text-body {
   font-size: 0.8rem;
   line-height: 1.1rem;
   display: none;
+}
+.container-text >.text-body.-card-expand {
+  display: inherit;
 }
 @media (min-width: 992px) {
   .container-text >.title {
@@ -354,14 +402,26 @@ small {
     position: relative;
     margin-bottom: 1rem;
   }
+  .container-text >.title.-eyecatcher {
+    font-size: 3.2rem;
+  }
+  .container-text >.title.-card-expand {
+    font-size: 2.2rem;
+  }
   .container-text >.subtitle {
     font-size: 1.7rem;
     margin: 0;
+  }
+  .container-text >.subtitle.-eyecatcher {
+    font-size: 1.2rem;
   }
   .container-text >.text-body {
     margin-bottom: 2rem;
     font-size: 0.9rem;
     line-height: 1.4rem;
+  }
+  .container-text >.text-body.-card-expand {
+    margin-bottom: 2rem;
   }
 }
 .button {
@@ -554,6 +614,12 @@ small {
 .-bg-img {
   background-size: cover;
   background-position: center;
+}
+.banda-angosta {
+  color: #6c2c91;
+}
+.bg-banda-angosta {
+  background: #e1dfe2;
 }
 .header {
   background: #00539f;
@@ -968,4 +1034,37 @@ nav .menu.-secondary a {
 .container-map-ubication .mex svg {
   display: block;
   margin: auto;
+}
+.container-in {
+  padding-top: 5.5rem;
+}
+.accordion-title {
+  color: #454545;
+}
+.accordion-title img {
+  width: 1.4rem;
+  margin-right: 0.5rem;
+}
+.accordion-title:hover,
+.accordion-title:focus {
+  background: transparent;
+  color: #454545;
+}
+.medals {
+  text-align: center;
+  padding-top: 4rem;
+}
+.medals img {
+  width: 4rem;
+  margin: auto;
+  display: block;
+}
+.medals strong {
+  display: block;
+  margin: 0.5rem 0 0.5rem;
+}
+.medals small {
+  display: block;
+  text-transform: uppercase;
+  margin: 1rem 0 0;
 }

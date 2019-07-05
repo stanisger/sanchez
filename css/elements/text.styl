@@ -4,6 +4,10 @@
     
     &.-color-white 
         color: $cm-white-color
+    >.list-descript
+        list-style none
+        li
+            padding .4rem 0 
 
     >.title
         font-size 1.3rem
@@ -16,33 +20,70 @@
             background $cm-secondary-color
             bottom -.5rem
             left 0
+
+        &.-banda-angosta   
+            &:before 
+                background $bandaAngosta
+
         &.-center
+            text-align center
             &:before
                 left 0
                 right 0
                 margin auto
+    
+        &.-eyecatcher
+            font-size 2.2rem
+        
+        &.-card-expand
+            font-size 1rem
+            &:before
+               display none
     
     >.subtitle 
         font-family $cm-font-body 
         font-size 1rem
         font-weight lighter 
 
+        &.-eyecatcher
+            font-size .9rem
+
+        &.-center
+            text-align center
+
     >.text-body 
         font-size .8rem
         line-height 1.1rem 
         display none
+        
+        &.-card-expand
+            display inherit
+
+
 
     @media (min-width 992px) 
         >.title
             font-size 2.7rem
             position relative
-            margin-bottom 1rem
+            margin-bottom 1rem 
+
+            &.-eyecatcher
+                font-size 3.2rem
+
+            &.-card-expand
+                font-size 2.2rem
 
         >.subtitle 
             font-size 1.7rem
             margin 0
 
+            &.-eyecatcher
+                font-size 1.2rem
+
         >.text-body 
             margin-bottom 2rem
             font-size .9rem 
-            line-height 1.4rem
+            line-height 1.4rem 
+            
+            &.-card-expand
+                margin-bottom 2rem
