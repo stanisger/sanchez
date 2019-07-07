@@ -428,7 +428,32 @@ small {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   opacity: 1;
+  padding: 0.5rem 2rem;
+  bottom: 1rem;
+  right: 9rem;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+  transition: all;
 }
+.button.-cmyk {
+  position: absolute;
+  background: #efefef;
+  border: 0;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #6c2c91;
+}
+.button:hover,
+.button color red,
+.button background-color #e0e0e0,
+.button border 0,
+.button opacity .5,
 .button.-primary-color-outline {
   background: transparent;
   border: 0.05rem solid #3dae2b;
@@ -448,33 +473,33 @@ small {
 }
 .button.-absolute {
   background-color: rgba(0,0,0,0.3);
-  color: #fff;
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
-  position: absolute;
+  border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  width: 100%;
-  text-align: right;
-  padding: 0.9rem 4rem 0.9rem 0;
-  margin: 0;
   bottom: 0;
+  color: #fff;
+  margin: 0;
+  padding: 0.9rem 4rem 0.9rem 0;
+  position: absolute;
   right: -1px;
-  border: 0;
+  text-align: right;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+  transition: all;
+  width: 100%;
 }
 .button.-absolute .material-icons {
-  position: absolute;
-  font-size: 1rem !important;
-  top: 0.77rem;
-  margin-left: 1rem;
   color: #3dae2b;
+  font-size: 1rem !important;
+  margin-left: 1rem;
+  position: absolute;
+  top: 0.77rem;
   -webkit-transition: all;
   -moz-transition: all;
   -ms-transition: all;
@@ -619,7 +644,19 @@ small {
   color: #6c2c91;
 }
 .bg-banda-angosta {
-  background: #e1dfe2;
+  background: #e2d5e9;
+}
+.bg-cyan {
+  background: #0688ff;
+}
+.bg-magenta {
+  background: #f0f;
+}
+.bg-black {
+  background: #1d1d1d;
+}
+.bg-yellow {
+  background: #ff0;
 }
 .header {
   background: #00539f;
@@ -1038,8 +1075,15 @@ nav .menu.-secondary a {
 .container-in {
   padding-top: 5.5rem;
 }
+.accordion-content {
+  padding: 4rem 2rem;
+}
 .accordion-title {
   color: #454545;
+  cursor: default;
+}
+.accordion-title:before {
+  display: none;
 }
 .accordion-title img {
   width: 1.4rem;
@@ -1067,4 +1111,57 @@ nav .menu.-secondary a {
   display: block;
   text-transform: uppercase;
   margin: 1rem 0 0;
+}
+.card-color {
+  background: #fff;
+  color: #454545;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 1rem;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 1rem;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -ms-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.card-color .-primary-color-outline {
+  margin-top: 1rem;
+  background: transparent;
+  border: 0.05rem solid #6c2c91;
+  color: #6c2c91;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.card-color .-icon-shopping {
+  cursor: pointer;
+  height: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 1.5rem;
+}
+.card-color span {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  height: 7rem;
+  left: -4rem;
+  position: absolute;
+  top: -4rem;
+  width: 7rem;
 }

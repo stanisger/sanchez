@@ -1,8 +1,15 @@
 .container-in
-    padding-top: 5.5rem;
+    padding-top 5.5rem
+
+.accordion-content
+  padding 4rem 2rem
 
 .accordion-title
     color $cm-font-color
+    cursor default
+
+    &:before
+      display none
     img
         width 1.4rem
         margin-right .5rem
@@ -28,5 +35,47 @@
        display block 
        text-transform  uppercase
        margin 1rem 0 0
+    
+.card-color
+  background $cm-white-color
+  color $cm-font-color
+  display flex
+  flex-direction column
+  padding 3rem 2rem 1rem
+  position relative
+  overflow hidden
+  -webkit-border-radius 1rem
+  -webkit-border-top-left-radius 0
+  -moz-border-radius 1rem
+  -moz-border-radius-topleft 0
+  border-radius 1rem
+  border-top-left-radius 0
+
+  .-primary-color-outline
+    margin-top 1rem
+    background transparent
+    border .05rem solid $bandaAngosta
+    color $bandaAngosta
+    width 100%
+    font-size .8rem
+    
+  .-icon-shopping
+    cursor pointer
+    height 1.5rem 
+    position absolute
+    right 1rem
+    top 1rem
+    width 1.5rem
+    
+
+  span
+    border-radius 50%
+    height 7rem
+    left -4rem
+    position absolute
+    top -4rem
+    width 7rem
+      
+
 
     
