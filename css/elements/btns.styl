@@ -3,12 +3,11 @@
 	font-weight bold
 	opacity 1
 	
+
 	&.-cmyk
 		position absolute
-		background #efefef
 		border 0
 		border-radius 2rem
-		color $bandaAngosta
 	    padding .5rem 2rem
 	    bottom 1rem
 	    right 9rem
@@ -18,8 +17,9 @@
 	    	color red
 	    	background-color #e0e0e0
 	    	border 0
-	    	opacity .5
-	    
+	    	opacity .5	    
+
+
 	&.-primary-color-outline 
 		background transparent
 		border .05rem solid $cm-secondary-color
@@ -57,4 +57,18 @@
 			.material-icons
 				margin-left 1.5rem
 				
+
+.-btn-rotograbado
+	background $rotograbadoLight !important
+	color $rotograbado
+
+.-btn-banda-angosta
+	background $bandaAngostaLight
+	color $bandaAngosta
+	transition all .4s
+	
+	&:hover
+	&:focus
+		background $bandaAngosta
+		color $bandaAngostaLight
 
