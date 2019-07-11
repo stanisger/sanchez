@@ -3,13 +3,11 @@
   background: none;
   border: none;
   position: relative;
-  top: -59px;
+  padding-top: 3rem;  
 }
 
 .tabbed-search-content {
   position: relative;
-  top: -59px;
-
   border: none;
 }
 
@@ -82,13 +80,17 @@
 }
 
 .tabs-title > a {
-  background: rgba( 0, 0, 0, .3);
+  background: $rotograbadoLight; 
   font-family: $cm-font-title ;
   color: #fff;
-  font-size: .85;
   font-weight: bold;
   margin: 0 1px;
+  font-size: .95rem ;
 }
+
+.tabs-panel {
+  padding: 0;}
+ 
 
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
   color: #fff;
@@ -98,7 +100,7 @@
 
 .tabs-title > a:hover {
   color: #fff;
-  background: $rotograbadoLight; 
+  background: $rotograbadoDark; 
 
 }
 

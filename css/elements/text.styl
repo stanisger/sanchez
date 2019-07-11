@@ -1,9 +1,13 @@
 .container-text 
     padding 0 1rem
     position relative
-    
+
+    &.-container-text-product
+        padding 4rem 5rem 0
+        
     &.-color-white 
         color: $cm-white-color
+   
     >.list-descript
         list-style none
         li
@@ -68,7 +72,7 @@
 
     @media (min-width 992px) 
         >.title
-            font-size 2.7rem
+            font-size 2.rem
             position relative
             margin-bottom 1rem 
 
@@ -76,7 +80,8 @@
                 font-size 3.2rem
 
             &.-card-expand
-                font-size 2.2rem
+                font-size 2rem
+                line-height 1.8rem
 
         >.subtitle 
             font-size 1.7rem
@@ -88,7 +93,8 @@
         >.text-body 
             margin-bottom 2rem
             font-size .9rem 
-            line-height 1.4rem 
             
             &.-card-expand
-                margin-bottom 2rem
+                line-height 1.1rem
+                margin-bottom 3rem
+                margin-top 1rem
