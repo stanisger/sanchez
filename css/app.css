@@ -302,7 +302,7 @@ small {
   color: #1c840c;
 }
 .cm-grayLight-color {
-  color: #ece7ec;
+  color: #f7f7f7;
 }
 .cm-grayMedium-color {
   color: #f2f2f2;
@@ -320,7 +320,7 @@ small {
   background-color: #1c840c;
 }
 .cm-grayLight-bg {
-  background-color: #ece7ec !important;
+  background-color: #f7f7f7 !important;
 }
 .cm-grayMedium-bg {
   background-color: #f2f2f2;
@@ -334,12 +334,15 @@ small {
 .my-3 {
   margin: 3rem 0;
 }
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
 .container-text {
   padding: 0 1rem;
   position: relative;
 }
 .container-text.-container-text-product {
-  padding: 4rem 5rem 0;
+  padding: 4rem 4rem 1rem;
 }
 .container-text.-color-white {
   color: #fff;
@@ -405,12 +408,26 @@ small {
 .container-text >.text-body.-card-expand {
   display: inherit;
 }
+.container-text >.subtitle-strong {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.container-text >.subtitle-strong.-white {
+  color: #fff;
+}
 @media (min-width: 992px) {
-  .container-text >.title font-size 2.rem,
-  .container-text >.title position relative,
-  .container-text >.title margin-bottom 1rem,
+  .container-text {
+    padding: 3rem 1rem;
+  }
+  .container-text >.title {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 1rem;
+  }
   .container-text >.title.-eyecatcher {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .container-text >.title.-card-expand {
     font-size: 2rem;
@@ -432,6 +449,29 @@ small {
     margin-bottom: 3rem;
     margin-top: 1rem;
   }
+}
+.container-detail-product {
+  padding: 3rem 4rem 1rem;
+}
+.container-detail-product >.title {
+  font-size: 1rem;
+}
+.container-detail-product >.list-detail {
+  margin: 0;
+  padding: 0;
+}
+.container-detail-product >.list-detail .list-detail-item {
+  padding: 0.15rem 0;
+  list-style: none;
+  display: flex;
+}
+.container-detail-product >.list-detail .list-detail-item >p {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+.container-detail-product >.list-detail .list-detail-item >img {
+  width: 1.7rem;
+  height: 1.7rem;
 }
 .button {
   font-family: 'Montserrat', sans-serif;
@@ -667,8 +707,32 @@ small {
 }
 @media (min-width: 640px) and (min-width: 992px) and (min-width: 1024px) {
   .card-sm {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
     min-height: 23rem;
+  }
+}
+.card-sm-eye {
+  min-height: auto;
+  padding: 1.5rem 0 3rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .card-sm-eye {
+    padding: 3rem 0;
+    min-height: 16rem;
+  }
+}
+@media (min-width: 640px) and (min-width: 992px) {
+  .card-sm-eye {
+    padding: 3rem 2rem;
+    min-height: 21rem;
+  }
+}
+@media (min-width: 640px) and (min-width: 992px) and (min-width: 1024px) {
+  .card-sm-eye {
+    padding: 4rem 1rem;
+    min-height: 18rem;
   }
 }
 .-bg-img {
@@ -680,6 +744,12 @@ small {
 }
 .bg-banda-angosta {
   background: #ece7ec;
+}
+.rotograbado .container-detail-product {
+  color: #69a930 !important;
+}
+.rotograbado .grid-x .cell {
+  background: #f2f2f2;
 }
 .rotograbado .grid-x .cell:nth-child(1) {
   background: #bcdf9c;
@@ -1350,11 +1420,12 @@ nav .menu.-secondary a {
   background: none;
   border: none;
   position: relative;
-  padding-top: 3rem;
 }
 .tabbed-search-content {
   position: relative;
   border: none;
+  max-width: 74rem;
+  margin: auto;
 }
 @media screen and (max-width: 39.9375em) {
   .tabbed-search-content {
@@ -1431,7 +1502,7 @@ nav .menu.-secondary a {
   margin-top: -2px;
 }
 .tabs-title > a {
-  background: #bcdf9c;
+  background: #d4d4d4;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: bold;
