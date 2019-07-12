@@ -331,6 +331,9 @@ small {
 .p-relative {
   position: relative;
 }
+.my-3 {
+  margin: 3rem 0;
+}
 .container-text {
   padding: 0 1rem;
   position: relative;
@@ -1248,7 +1251,7 @@ nav .menu.-secondary a {
 }
 .medals {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .medals img {
   width: 4rem;
@@ -1265,17 +1268,11 @@ nav .menu.-secondary a {
   margin: 1rem 0 0;
 }
 .card-color {
-  background: #fff;
-  color: #454545;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 2rem 1rem;
-  position: relative;
-  overflow: hidden;
-  -webkit-border-radius: 1rem;
-  -webkit-border-top-left-radius: 0;
   -moz-border-radius: 1rem;
   -moz-border-radius-topleft: 0;
+  -webkit-border-radius: 1rem;
+  -webkit-border-top-left-radius: 0;
+  background: #fff;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
@@ -1287,14 +1284,20 @@ nav .menu.-secondary a {
   -ms-border-top-left-radius: 0;
   -o-border-top-left-radius: 0;
   border-top-left-radius: 0;
+  color: #454545;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 3rem 2rem 1rem;
+  position: relative;
 }
 .card-color .-primary-color-outline {
-  margin-top: 1rem;
   background: transparent;
   border: 0.05rem solid #6c2c91;
   color: #6c2c91;
-  width: 100%;
   font-size: 0.8rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 .card-color .-icon-shopping {
   cursor: pointer;
@@ -1318,16 +1321,16 @@ nav .menu.-secondary a {
   width: 7rem;
 }
 .fixed_aside {
-  position: fixed !important;
-  top: 5rem !important;
-  z-index: 999;
-  left: 0;
-  background: #fff !important;
-  width: 100%;
   -webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0px;
   -moz-box-shadow: 0px;
   box-shadow: 0px;
+  background: #fff !important;
+  left: 0;
+  position: fixed !important;
+  top: 5rem !important;
+  width: 100%;
+  z-index: 999;
 }
 .tabbed-search {
   background: none;
