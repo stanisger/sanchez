@@ -9,12 +9,28 @@
   .container-detail-product
 	  color $cm-primary-color 
 
+  .-container-text-product-color
+	  background $rotograbado
+
   .grid-x
 	  .cell 
 		  background $cm-grayMedium-color
+
 	  .cell:nth-child(1)
-		  background $rotograbado
+		  overflow hidden
+		  background #7DB931
 		  position relative
+		  padding-right 1.5rem
+		  -webkit-border-top-left-radius 3rem
+		  -webkit-border-bottom-right-radius 7rem
+		  -webkit-border-bottom-left-radius 3rem
+		  -moz-border-radius-topleft 3rem
+		  -moz-border-radius-bottomright 7rem
+		  -moz-border-radius-bottomleft 3rem
+		  border-top-left-radius 3rem
+		  border-bottom-right-radius 7rem
+		  border-bottom-left-radius 3rem
+
 	.title-card
 		color $cm-white-color 
 	.subtitle-card	
@@ -44,10 +60,6 @@
 	.-btn-download
 		background $cm-primary-color
 		
-
-
-
-
 
 .bg-rotograbadoLight
     background $rotograbadoLight
