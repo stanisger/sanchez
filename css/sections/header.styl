@@ -129,7 +129,7 @@
 			&:hover 
 			&:focus
 			&:active		
-				color $cm-white-color !important 
+				color $cm-white-color 
 	
 	@media(max-width 1024px) 
 		display none
@@ -137,19 +137,26 @@
 .is-dropdown-submenu
 	border 0
 	padding 1rem 0
-	background $cm-primary-color
+	background $cm-primary-colorLight
 	li 
 		&:hover
-
 		a 
-			color: $cm-primary-color
+			color $cm-primary-color
 			&:hover 
 			&:focus
 			&:active		
-				color $cm-secondary-color !important
+				color $cm-primary-color
 
 .dropdown.menu>li.is-dropdown-submenu-parent>a::after
+	transition: all 0.5s ease-out;
 	border-color: $cm-secondary-color transparent transparent;
+
+.dropdown.menu>li.is-active > a {
+	color $cm-white-color
+	&:after {
+		transform: rotate(180deg);
+		}
+}
 
 .language-select
 	display flex

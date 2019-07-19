@@ -3,7 +3,9 @@
   margin 0 auto  2rem
 
 .container-in
-    padding-top 5.5rem
+    padding-top 4.2rem
+    @media(min-width:1024px )
+      padding-top 5.5rem 
 
 .accordion-content
   padding 4rem 2rem
@@ -18,13 +20,10 @@
     cursor default
     color $cm-font-color
     padding 0
-    border 0
-    background rgba(255,255,255,1)
-    background -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
-    background -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(9%, rgba(255,255,255,1)), color-stop(9%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)))
-    background -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
-    background -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
-    background -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+    border 0 !important
+    
+    @media(max-width:992px)
+      margin-bottom 1rem 
 
     &:before
       display none
@@ -37,23 +36,30 @@
     &:focus
         background transparent
         color $cm-font-color
-.medals 
-    text-align center
-    padding-top  2rem
 
-    img
-        width  4rem
-        margin auto
-        display block 
+    .grid-x
+      background rgba(255,255,255,1)
+      background -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(9%, rgba(255,255,255,1)), color-stop(9%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)))
+      background -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
 
-    strong  
-       display block 
-       margin .5rem 0 .5rem
+    .cell 
+        background $cm-grayMedium-color
 
-    small 
-       display block 
-       text-transform  uppercase
-       margin 1rem 0 0
+    .cell:nth-child(1)
+        position relative
+
+    .title-card
+        color $cm-white-color 
+
+    .subtitle-card	
+        color $cm-white-color 
+
+    .body-card
+        color $cm-white-color 
+
     
 .card-color
   background $cm-white-color

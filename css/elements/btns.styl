@@ -5,26 +5,24 @@
 	
 	&.-btn-download
 		margin auto
-		width 12rem
 		display block
+		border-radius 5rem
+		padding .6rem 2rem
+		background transparent
+
 		.fas
 			font-size 1rem
 
-	&.-cmyk
+	&.-in-card 
 		position absolute
-		border 0
-		border-radius .5rem
-	    padding .5rem 2rem
-	    bottom 1rem
-	    right 9rem
-	    transition all .4s
-	    
-	    &:hover
-	    	color red
-	    	background-color #e0e0e0
-	    	border 0
-	    	opacity .5	    
+		bottom 3rem
+		right 7.5rem
 
+		@media (max-width 640px) 
+			bottom initial 
+			right initial 
+			top 8.75rem
+			left -.5rem
 
 	&.-primary-color-outline 
 		background transparent
@@ -37,6 +35,7 @@
 		transition all .4s ease	
 		&:hover 
 			background-color $cm-tertiary-color
+			
 	&.-absolute
 		background-color rgba( 0, 0, 0, .3)
 		border 0
@@ -62,18 +61,4 @@
 		&:hover 
 			.material-icons
 				margin-left 1.5rem
-
-.-btn-coldset
-	background $cm-primary-color !important
-	color $cm-white-color
-
-.-btn-banda-angosta
-	background $bandaAngostaLight
-	color $bandaAngosta
-	transition all .4s
-	
-	&:hover
-	&:focus
-		background $bandaAngosta
-		color $bandaAngostaLight
 

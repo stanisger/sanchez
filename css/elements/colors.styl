@@ -10,15 +10,16 @@
 	  color $cm-primary-color 
 
   .-container-text-product-color
-	  background $rotograbado
+	  background $green
 
   .grid-x
+
 	  .cell 
 		  background $cm-grayMedium-color
 
-	  .cell:nth-child(1)
+	  .cell-color
 		  overflow hidden
-		  background #7DB931
+		  background $greenLight 
 		  position relative
 		  padding-right 1.5rem
 		  -webkit-border-top-left-radius 3rem
@@ -31,35 +32,42 @@
 		  border-bottom-right-radius 7rem
 		  border-bottom-left-radius 3rem
 
+		  @media (max-width 1023px)
+			  -webkit-border-top-left-radius 0
+			  -webkit-border-bottom-right-radius 7rem
+			  -webkit-border-bottom-left-radius 0
+			  -moz-border-radius-topleft 0
+			  -moz-border-radius-bottomright 7rem
+			  -moz-border-radius-bottomleft 0
+			  border-top-left-radius 0
+			  border-bottom-right-radius 7rem
+			  border-bottom-left-radius 0
+
+
+
 	.title-card
 		color $cm-white-color 
 	.subtitle-card	
 		color $cm-white-color 
 	.body-card
 		color $cm-white-color 
+
 	.-btn-download
-		background $rotograbado
+		border $green 1px solid 
+		color $green
+
+		&:hover 
+			color $greenDark
+
+		@media (max-width 640px)
+			border 0
+			color $greenDark
+
 		
 .coldset
 
   .container-detail-product
-	  color $cm-primary-color 
-
-  .grid-x
-	  .cell 
-		  background $cm-grayMedium-color
-	  .cell:nth-child(1)
-		  background $cm-primary-color
-		  position relative
-	.title-card
-		color $cm-white-color 
-	.subtitle-card	
-		color $cm-white-color 
-	.body-card
-		color $cm-white-color 
-	.-btn-download
-		background $cm-primary-color
-		
+	  color $cm-primary-color 		
 
 .bg-rotograbadoLight
     background $rotograbadoLight

@@ -1,6 +1,12 @@
 .marketing-site-footer-content {
   max-width 74rem
   margin 0 auto 2rem
+
+  @media (max-width: 640px ) {
+    text-align: center;
+    .material-icons {
+      display: none}
+    }
 }
 
 
@@ -9,15 +15,22 @@
   color: $cm-white-color ;
   padding: 2rem 0 0;
   margin-top: 1rem;
+
+  h4 {
+    margin: 0;
+    font-family: $cm-font-body;
+  }
   
   p {
     margin-left: 0;
     line-height: 1.125rem;
     font-size: .9rem;
+    width: 100%;
     }
     
     img.ink {
-      width: 7rem;
+      max-width: 12rem;
+      width: 12rem;
     }
 }
 
@@ -107,4 +120,13 @@
 }
 
 .networks img{
-    padding: .4rem}
+    padding: .4rem }
+
+.item-logotipo-footer {
+    width: 12rem;
+    margin-bottom: 1rem;
+    @media (max-width :640px) {
+      margin-top: 1rem;
+
+      }
+  }

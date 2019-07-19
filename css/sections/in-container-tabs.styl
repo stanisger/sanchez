@@ -3,7 +3,6 @@
   background: none;
   border: none;
   position: relative;
-  
 }
 
 .tabbed-search-content {
@@ -15,7 +14,6 @@
 
 @media screen and (max-width: 39.9375em) {
   .tabbed-search-content {
-    padding-top: 20px;
     padding-bottom: 30px;
   }
 }
@@ -25,7 +23,7 @@
   font-size: 0.8em;
   text-transform: uppercase;
   color: #9f9a90;
-  background: $rotograbadoLight; 
+  background: $rotograbadoLight;  
 }
 
 .tabbed-search-content input[type=text] {
@@ -92,11 +90,33 @@
   -moz-border-radius-topright: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+
+  @media (max-width 1024px) {
+     font-size: .8rem ;
+  }
+
+  @media (max-width 993px) {
+     font-size: .7rem ;
+  }
+
+  @media (max-width 700px) {
+     border-radius: 0;
+     width: 100%;
+  }
+  
+
 }
 
 .tabs-panel {
   padding: 0;}
  
+.tabs-title {
+  width: 32%
+
+  @media(min-width:700px) {
+    width: auto
+    }
+  }
 
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
   color: #fff;
@@ -104,10 +124,14 @@
 
 }
 
+
 .tabs-title > a:hover {
   color: #fff;
   background: $cm-grayDark-color; 
-
+  
+  @media(max-width: 640px) {
+      background: $cm-primary-color; 
+  }
 }
 
 .signup-callout {
