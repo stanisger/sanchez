@@ -565,6 +565,12 @@ small {
   }
 }
 .button.-primary-color-outline {
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  border-radius: 5rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
   background: transparent;
   border: 0.05rem solid #3dae2b;
   color: #3dae2b;
@@ -1613,11 +1619,17 @@ nav .menu.-secondary a {
 }
 .card-color {
   background: #fff;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
   color: #454545;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 3rem 2rem 1rem;
+  padding: 2rem 2rem 2rem 3rem;
   position: relative;
 }
 .card-color .-primary-color-outline {
@@ -1643,11 +1655,11 @@ nav .menu.-secondary a {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  height: 7rem;
-  left: -4rem;
+  height: 1.5rem;
+  left: 1rem;
   position: absolute;
-  top: -4rem;
-  width: 7rem;
+  top: 2rem;
+  width: 1.5rem;
 }
 .fixed_aside {
   -webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.4);
@@ -1919,9 +1931,11 @@ nav .menu.-secondary a {
   font-size: 24px;
 }
 .marketing-site-content-section-block-subheader {
-  font-size: 13px;
+  font-size: 0.9rem;
+  color: #00539f;
 }
 .product-feature-section {
+  text-align: center;
   max-width: 64rem;
   margin: auto;
   padding: 4rem 0;
@@ -2012,7 +2026,11 @@ nav .menu.-secondary a {
 }
 .marketing-site-three-up {
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 2rem;
+}
+.marketing-site-three-up img {
+  width: 5rem;
+  margin: 1rem 0;
 }
 .marketing-site-three-up .row {
   max-width: 900px;
