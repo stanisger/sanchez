@@ -501,6 +501,7 @@ small {
   padding: 0.15rem 0;
   list-style: none;
   display: flex;
+  align-items: end;
 }
 .container-detail-product >.list-detail .list-detail-item >p {
   font-size: 0.9rem;
@@ -1950,6 +1951,10 @@ nav .menu.-secondary a {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.product-feature-section-outer img {
+  width: 14rem;
+  margin: 0 auto 2rem;
+}
 @media print, screen and (min-width: 40em) {
   .product-feature-section-outer {
     max-width: 75%;
@@ -2051,4 +2056,8 @@ nav .menu.-secondary a {
 .marketing-site-three-up-headline {
   margin-bottom: 2rem;
   font-size: 24px;
+}
+.large iframe {
+  width: 100%;
+  height: 500px;
 }

@@ -1,0 +1,61 @@
+.container-map-ubication
+    padding 2rem 0 
+
+    .mex 
+        position relative
+        padding 2rem 0 0
+        width: 850px
+        margin: auto
+        
+        svg:nth-child(2) 
+        svg:nth-child(3) 
+            display: none
+
+        .city-container:nth-child(4) 
+            top 5rem
+            right 28rem
+
+        .city-container:nth-child(5) 
+            top 12rem
+            left 30rem
+
+        .city-container:nth-child(6) 
+            top 16.5rem
+            left 23rem
+
+        .city-container:nth-child(7) 
+            top 20rem
+            left 28rem
+            
+        .city-container:nth-child(8) 
+            top 24rem
+            left 35rem
+
+        .city-container
+            position absolute
+            font-size .8rem
+            cursor pointer
+            &:hover
+                a
+                    right -2rem
+            span 
+                vertical-align text-bottom 
+
+            a
+                height 1.2rem
+                width 1.2rem
+                border-radius 50%
+                background $cm-secondary-color
+                display inline-block
+                padding 0.05rem 0.3rem
+                position absolute
+                right -1.7rem
+                top 0
+                transition all .4s ease
+
+                .material-icons
+                    color $cm-white-color
+                    font-size 11px
+        svg 
+            display block
+            margin auto

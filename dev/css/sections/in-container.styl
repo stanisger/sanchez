@@ -1,0 +1,105 @@
+.accordion
+  max-width  74rem
+  margin 0 auto  2rem
+
+.container-in
+    padding-top 5.5rem
+
+.accordion-content
+  padding 4rem 2rem
+  margin 0 1rem
+  border 0
+  background $cm-grayMedium-color
+  -webkit-box-shadow inset -3px 6px 5px -4px rgba(0,0,0,0.05)
+  -moz-box-shadow inset -3px 6px 5px -4px rgba(0,0,0,0.05)
+  box-shadow inset -3px 6px 5px -4px rgba(0,0,0,0.05)
+
+.accordion-title
+    cursor default
+    color $cm-font-color
+    padding 0
+    border 0 !important
+
+    &:before
+      display none
+    img
+        width 1.1rem
+        margin-right .5rem
+ 
+
+    &:hover
+    &:focus
+        background transparent
+        color $cm-font-color
+
+    .grid-x
+      background rgba(255,255,255,1)
+      background -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(9%, rgba(255,255,255,1)), color-stop(9%, rgba(242,242,242,1)), color-stop(100%, rgba(242,242,242,1)))
+      background -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+      background -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(242,242,242,1) 9%, rgba(242,242,242,1) 100%)
+
+    .cell 
+        background $cm-grayMedium-color
+
+    .cell:nth-child(1)
+        position relative
+
+    .title-card
+        color $cm-white-color 
+
+    .subtitle-card	
+        color $cm-white-color 
+
+    .body-card
+        color $cm-white-color 
+
+    
+.card-color
+  background $cm-white-color
+  color $cm-font-color
+  display flex
+  flex-direction column
+  overflow hidden
+  padding 3rem 2rem 1rem
+  position relative
+
+  .-primary-color-outline
+    background transparent
+    border .05rem solid $bandaAngosta
+    color $bandaAngosta
+    font-size .8rem
+    margin-top 1rem
+    width 100%
+    
+  .-icon-shopping
+    cursor pointer
+    height 1.5rem 
+    position absolute
+    right 1rem
+    top 1rem
+    width 1.5rem
+    
+
+  span
+    border-radius 50%
+    height 7rem
+    left -4rem
+    position absolute
+    top -4rem
+    width 7rem
+
+.fixed_aside
+  -webkit-box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.4); 
+  box-shadow: 0px 1px 6px -1px rgba(0,0,0,0.4);
+  background white  !important
+  left 0
+  position fixed !important
+  top 5rem  !important
+  width 100% 
+  z-index 999 
+
+
+
+    

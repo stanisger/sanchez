@@ -1,0 +1,63 @@
+.button 
+	font-family $cm-font-title 
+	font-weight bold
+	opacity 1
+	
+	&.-btn-download
+		margin auto
+		display block
+		border-radius 5rem
+		padding .6rem 2rem
+		background transparent
+
+		.fas
+			font-size 1rem
+
+	&.-in-card 
+		position absolute
+		bottom 3rem
+		right 7.5rem
+
+		@media (max-width 640px) 
+			bottom initial 
+			right initial 
+			top 8rem
+
+	&.-primary-color-outline 
+		background transparent
+		border .05rem solid $cm-secondary-color
+		color $cm-secondary-color
+		
+	&.-primary-color
+		background-color $cm-secondary-color
+		color $cm-white-color 
+		transition all .4s ease	
+		&:hover 
+			background-color $cm-tertiary-color
+			
+	&.-absolute
+		background-color rgba( 0, 0, 0, .3)
+		border 0
+		border-radius 0
+		bottom 0
+		color $cm-white-color 
+		margin 0
+		padding .9rem 4rem .9rem 0
+		position absolute
+		right -1px
+		text-align right 
+		transition all .4s ease	
+		width 100%
+		
+		.material-icons
+			color $cm-secondary-color
+			font-size 1rem !important
+			margin-left 1rem
+			position absolute
+			top .77rem
+			transition all .4s ease 
+		
+		&:hover 
+			.material-icons
+				margin-left 1.5rem
+
