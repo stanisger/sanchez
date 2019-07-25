@@ -4,37 +4,40 @@
 	opacity 1
 	
 	&.-btn-download
-		max-width 14rem
-		margin auto
-		display block
-		border-radius 5rem
-		padding .6rem 2rem
 		background transparent
+		border-radius 5rem
+		display block
+		margin auto
+		max-width 14rem
+		padding .6rem 2rem
 
 		.fas
 			font-size 1rem
+			
+		@media(max-width: 640px) 
+			font-size .8rem
+			padding .4rem 1rem 
 
 	&.-in-card 
+		bottom 1.8rem
 		position absolute
-		bottom 3rem
-		right 7.5rem
+		right 8.5rem
 
 		@media (max-width 640px) 
-			bottom initial 
+			left 1.5rem
 			right initial 
-			top 8.75rem
-			left -.5rem
 
 	&.-primary-color-outline 
-		border-radius 5rem
 		background transparent
 		border .05rem solid $cm-secondary-color
-		color $cm-secondary-color
-		
+		border-radius 5rem
+		color $cm-secondary-color 
+
 	&.-primary-color
 		background-color $cm-secondary-color
 		color $cm-white-color 
-		transition all .4s ease	
+		transition all .4s ease 
+
 		&:hover 
 			background-color $cm-tertiary-color
 			
@@ -51,7 +54,7 @@
 		text-align right 
 		transition all .4s ease	
 		width 100%
-		
+	
 		.material-icons
 			color $cm-secondary-color
 			font-size 1rem !important

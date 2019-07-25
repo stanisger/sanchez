@@ -349,15 +349,15 @@ small {
   padding: 4rem 4rem 1rem;
 }
 .container-text.-container-text-product-color {
-  height: 100%;
-  padding: 3rem;
-  -webkit-border-bottom-right-radius: 6rem;
   -moz-border-radius-bottomright: 6rem;
+  -webkit-border-bottom-right-radius: 6rem;
   -webkit-border-bottom-right-radius: 6rem;
   -moz-border-radius-bottomright: 6rem;
   -ms-border-bottom-right-radius: 6rem;
   -o-border-bottom-right-radius: 6rem;
   border-bottom-right-radius: 6rem;
+  height: 100%;
+  padding: 3rem;
 }
 @media (max-width: 640px) {
   .container-text.-container-text-product-color {
@@ -379,13 +379,13 @@ small {
   position: relative;
 }
 .container-text >.title:before {
-  content: '';
-  position: absolute;
-  height: 0.2rem;
-  width: 4rem;
   background: #3dae2b;
   bottom: 0;
+  content: '';
+  height: 0.2rem;
   left: 0;
+  position: absolute;
+  width: 4rem;
 }
 .container-text >.title.-coldset:before {
   background: #00539f;
@@ -498,13 +498,17 @@ small {
   padding: 0;
 }
 .container-detail-product >.list-detail .list-detail-item {
-  padding: 0.15rem 0;
-  list-style: none;
+  align-items: center;
   display: flex;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  padding: 0.15rem 0;
 }
 .container-detail-product >.list-detail .list-detail-item >p {
   font-size: 0.9rem;
+  height: auto;
   line-height: 1.1rem;
+  margin: 0;
 }
 @media (max-width: 640px) {
   .container-detail-product >.list-detail .list-detail-item >p {
@@ -512,8 +516,8 @@ small {
   }
 }
 .container-detail-product >.list-detail .list-detail-item >img {
-  width: 1.7rem;
   height: 1.7rem;
+  width: 1.7rem;
 }
 @media (max-width: 640px) {
   .container-detail-product >.list-detail .list-detail-item >img {
@@ -536,43 +540,47 @@ small {
   opacity: 1;
 }
 .button.-btn-download {
-  max-width: 14rem;
-  margin: auto;
-  display: block;
+  background: transparent;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   border-radius: 5rem;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  display: block;
+  margin: auto;
+  max-width: 14rem;
   padding: 0.6rem 2rem;
-  background: transparent;
 }
 .button.-btn-download .fas {
   font-size: 1rem;
 }
+@media (max-width: 640px) {
+  .button.-btn-download {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+}
 .button.-in-card {
+  bottom: 1.8rem;
   position: absolute;
-  bottom: 3rem;
-  right: 7.5rem;
+  right: 8.5rem;
 }
 @media (max-width: 640px) {
   .button.-in-card {
-    bottom: initial;
+    left: 1.5rem;
     right: initial;
-    top: 8.75rem;
-    left: -0.5rem;
   }
 }
 .button.-primary-color-outline {
+  background: transparent;
+  border: 0.05rem solid #3dae2b;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   border-radius: 5rem;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  background: transparent;
-  border: 0.05rem solid #3dae2b;
   color: #3dae2b;
 }
 .button.-primary-color {
@@ -868,7 +876,6 @@ small {
 }
 @media (max-width: 640px) {
   .-btn-download {
-    border: 0;
     color: #137e1e;
   }
 }
@@ -949,14 +956,25 @@ small {
 .-btn-download:hover {
   color: #25327b;
 }
-@media (max-width: 640px) {
-  .-btn-download {
-    border: 0;
-    color: #25327b;
-  }
-}
 .-btn-download .container-detail-product {
   color: #00539f;
+}
+.cell-color {
+  min-height: 15rem;
+}
+@media (max-width: 992px) {
+  .cell-color {
+    min-height: auto;
+  }
+}
+.cell-list .grid-x .cell:nth-child(2) {
+  margin-top: 2.1rem;
+}
+@media (max-width: 640px) {
+  .cell-list .grid-x .cell:nth-child(2) {
+    margin-top: 0;
+    padding-bottom: 4rem;
+  }
 }
 .bg-rotograbadoLight {
   background: $rotograbadoLight;
@@ -1571,6 +1589,17 @@ nav .menu.-secondary a {
   -moz-box-shadow: inset;
   box-shadow: inset;
 }
+@media (max-width: 992px) {
+  .accordion-content {
+    margin: 0 0.5rem;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .accordion-content {
+    margin: 0 0.5rem;
+  }
+}
 .accordion-title {
   cursor: default;
   color: #454545;
@@ -1579,7 +1608,7 @@ nav .menu.-secondary a {
 }
 @media (max-width: 992px) {
   .accordion-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 }
 .accordion-title:before {
@@ -1631,6 +1660,7 @@ nav .menu.-secondary a {
   overflow: hidden;
   padding: 2rem 2rem 2rem 3rem;
   position: relative;
+  margin-bottom: 1rem;
 }
 .card-color .-primary-color-outline {
   background: transparent;

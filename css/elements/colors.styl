@@ -60,7 +60,6 @@
 			color $greenDark
 
 		@media (max-width 640px)
-			border 0
 			color $greenDark
 
 		
@@ -119,13 +118,27 @@
 		&:hover 
 			color $blueDark
 
-		@media (max-width 640px)
-			border 0
-			color $blueDark
-
 
   .container-detail-product
 	  color $cm-primary-color 		
+	  
+
+
+// cell stiles generals
+.cell-color 
+	min-height 15rem 
+	
+	@media(max-width: 992px)
+		min-height auto
+	  
+.cell-list 
+    .grid-x 
+        .cell:nth-child(2)
+            margin-top 2.1rem
+ 
+            @media(max-width: 640px)
+            	margin-top 0
+            	padding-bottom 4rem
 
 .bg-rotograbadoLight
     background $rotograbadoLight
